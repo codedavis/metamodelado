@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetamodeloSimplificadoUMLPeliculas:Package
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:MetamodeloSimplificadoUMLPeliculas="http://metamodelo_simplificado_uml_peliculas.ecore"
+    xsi:schemaLocation="http://metamodelo_simplificado_uml_peliculas.ecore ../metamodelado/metamodelo_simplificado_diagrama_clase_peliculas.ecore">
+  <primitivedatatype
+      name="String"/>
+  <primitivedatatype
+      name="Float"/>
+  <primitivedatatype
+      name="Boolean"/>
+  <primitivedatatype
+      name="Date"/>
+  <primitivedatatype
+      name="Integer"/>
+  <Class name="Pelicula">
+    <attribute
+        name="nombre"
+        clasifier="//@primitivedatatype.0"/>
+    <attribute
+        name="url"
+        clasifier="//@primitivedatatype.0"/>
+    <attribute
+        name="estado"
+        clasifier="//@primitivedatatype.2"/>
+    <attribute
+        name="administrador"
+        clasifier="//@Class.5"/>
+  </Class>
+  <Class name="Reserva">
+    <attribute
+        name="fecha"
+        clasifier="//@primitivedatatype.3"/>
+    <attribute
+        name="costo"
+        clasifier="//@primitivedatatype.1"/>
+    <attribute
+        name="usuario"
+        clasifier="//@Class.2"/>
+    <attribute
+        name="pelicula"
+        clasifier="//@Class.0"/>
+  </Class>
+  <Class name="Usuario">
+    <attribute
+        name="identificacion"
+        clasifier="//@primitivedatatype.0"/>
+    <attribute
+        name="nombres"
+        clasifier="//@primitivedatatype.0"/>
+    <attribute
+        name="apellidos"
+        clasifier="//@primitivedatatype.0"/>
+    <attribute
+        name="tipoIdentificacion"
+        clasifier="//@Class.4"/>
+  </Class>
+  <Class name="Pago">
+    <attribute
+        name="numero"
+        clasifier="//@primitivedatatype.0"/>
+    <attribute
+        name="fecha"
+        clasifier="//@primitivedatatype.3"/>
+    <attribute
+        name="reserva"
+        clasifier="//@Class.1"/>
+    <attribute
+        name="monto"
+        clasifier="//@primitivedatatype.1"/>
+  </Class>
+  <Class name="TipoIdentificacion">
+    <attribute
+        name="codigo"
+        clasifier="//@primitivedatatype.0"/>
+    <attribute
+        name="nombre"
+        clasifier="//@primitivedatatype.0"/>
+    <attribute
+        name="descripcion"
+        clasifier="//@primitivedatatype.0"/>
+  </Class>
+  <Class name="Admin">
+    <attribute
+        name="usuario"
+        clasifier="//@primitivedatatype.0"/>
+    <attribute
+        name="clave"
+        clasifier="//@primitivedatatype.0"/>
+    <attribute
+        name="usuario"
+        clasifier="//@Class.2"/>
+  </Class>
+</MetamodeloSimplificadoUMLPeliculas:Package>

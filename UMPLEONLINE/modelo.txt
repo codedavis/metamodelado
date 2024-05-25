@@ -1,0 +1,44 @@
+class Admin{
+   isA Usuario;
+   String usuario;
+   String clave;
+}
+
+class Pelicula{
+   String nombre;
+   String url;
+   Boolean  estado;
+* -- 1 Admin;
+}
+
+class Reserva{
+  Date fechaResera;
+   float costo; 
+   * -- 1 Pelicula;
+}
+
+class TipoIdentificacion{
+  String codigo;
+   String nombre;
+     String descripcion;
+
+}
+
+class Usuario {
+   String identificacion;
+   String nombre;
+   String apellidos; 
+   Date fechaNacimiento;
+1 -- * Reserva;
+   * -- 1 TipoIdentificacion;
+         
+ }
+                    
+class Pago {
+  String numero;
+  Date fecha;
+  Float monto;
+  estado;
+1 -- * Reserva;
+  	
+ }
